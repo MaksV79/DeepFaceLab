@@ -44,7 +44,7 @@ class AVATARModel(ModelBase):
         exec(nnlib.code_import_all, locals(), globals())
         self.set_vram_batch_requirements({6:4})
 
-        resolution = self.resolution = 224
+        resolution = self.resolution = 384
         avatar_type = self.options['avatar_type']
         stage = self.stage = self.options['stage']
         df_res = self.df_res = 128
